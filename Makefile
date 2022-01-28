@@ -5,7 +5,7 @@ ifeq ($(strip $(GXX)),)
 else
 	_gxx = g++
 endif
-comp_flags =-c -Wall -O3
+comp_flags = -c -Wall -O3
 exec_name = BAFExtract
 
 # Define pattern rule for building object files.
