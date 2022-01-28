@@ -1,6 +1,6 @@
 all: BAFExtract 
 
-comp_flags = -c -Wall -O3
+comp_flags = -Wall -O3
 exec_name = BAFExtract
 
 # Define pattern rule for building object files.
