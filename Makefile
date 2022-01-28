@@ -1,6 +1,6 @@
 all: BAFExtract 
 
-comp_flags = -Wall -O3
+comp_flags =-c -Wall -O3
 exec_name = BAFExtract
 
 # Define pattern rule for building object files.
@@ -13,7 +13,7 @@ src/ansi_string.o \
 src/genomics_coords.o \
 
 BAFExtract: ${objs}
-	${CPP} -O3 -o bin/${exec_name} ${objs}
+	${CPP} -O3 ${objs} -o bin/${exec_name}
 
 clean:
 	rm -f *.o ${objs} bin/${exec_name} 
